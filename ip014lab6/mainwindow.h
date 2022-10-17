@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "bessonov_miheev.h"
 
 namespace Ui {
 class MainWindow;
@@ -17,6 +18,14 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    bessonov_miheev *myform;
+
+signals:
+    void sendData(QString str);
+
+private slots:
+    void on_pushButton_send_clicked();
+    void on_pushButton_load_clicked();
 };
 
 #endif // MAINWINDOW_H

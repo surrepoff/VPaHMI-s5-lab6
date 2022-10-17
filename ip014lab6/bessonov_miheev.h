@@ -2,6 +2,7 @@
 #define BESSONOV_MIHEEV_H
 
 #include <QWidget>
+#include <QAbstractButton>
 
 namespace Ui {
 class bessonov_miheev;
@@ -17,6 +18,12 @@ public:
 
 private:
     Ui::bessonov_miheev *ui;
+
+public slots:
+    void recieveData(QString str);
+
+private slots:
+    void on_buttonBox_clicked(QAbstractButton *button);
 };
 
 #endif // BESSONOV_MIHEEV_H

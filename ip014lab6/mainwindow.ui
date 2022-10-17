@@ -11,13 +11,13 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Форма</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>200</x>
+      <x>290</x>
       <y>260</y>
       <width>101</width>
       <height>24</height>
@@ -27,7 +27,7 @@
      <string>Готово</string>
     </property>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>200</x>
@@ -38,27 +38,27 @@
     </property>
     <layout class="QGridLayout" name="gridLayout_2">
      <item row="0" column="0">
-      <widget class="QLabel" name="label">
+      <widget class="QLabel" name="label_fio">
        <property name="text">
         <string>ФИО</string>
        </property>
       </widget>
      </item>
      <item row="0" column="2">
-      <widget class="QLineEdit" name="lineEdit"/>
+      <widget class="QLineEdit" name="lineEdit_fio"/>
      </item>
      <item row="1" column="0">
-      <widget class="QLabel" name="label_2">
+      <widget class="QLabel" name="label_dol">
        <property name="text">
         <string>Должность</string>
        </property>
       </widget>
      </item>
      <item row="1" column="2">
-      <widget class="QLineEdit" name="lineEdit_2"/>
+      <widget class="QLineEdit" name="lineEdit_dol"/>
      </item>
      <item row="2" column="0" colspan="2">
-      <widget class="QLabel" name="label_3">
+      <widget class="QLabel" name="label_date">
        <property name="text">
         <string>Дата рождения</string>
        </property>
@@ -68,43 +68,46 @@
       <widget class="QDateEdit" name="dateEdit"/>
      </item>
      <item row="3" column="0">
-      <widget class="QRadioButton" name="radioButton">
+      <widget class="QRadioButton" name="radioButton_m">
        <property name="text">
         <string>м</string>
        </property>
       </widget>
      </item>
      <item row="3" column="1">
-      <widget class="QRadioButton" name="radioButton_2">
+      <widget class="QRadioButton" name="radioButton_w">
+       <property name="toolTipDuration">
+        <number>3</number>
+       </property>
        <property name="text">
         <string>ж</string>
        </property>
       </widget>
      </item>
      <item row="4" column="0">
-      <widget class="QLabel" name="label_5">
+      <widget class="QLabel" name="label_char">
        <property name="text">
         <string>Характер</string>
        </property>
       </widget>
      </item>
      <item row="4" column="2">
-      <widget class="QLineEdit" name="lineEdit_3"/>
+      <widget class="QLineEdit" name="lineEdit_char"/>
      </item>
     </layout>
    </widget>
    <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>20</y>
+      <x>21</x>
+      <y>21</y>
       <width>161</width>
-      <height>221</height>
+      <height>261</height>
      </rect>
     </property>
-    <layout class="QGridLayout" name="gridLayout">
-     <item row="0" column="0">
-      <widget class="QLabel" name="label_4">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label_photo">
        <property name="frameShape">
         <enum>QFrame::Panel</enum>
        </property>
@@ -119,12 +122,15 @@
        </property>
       </widget>
      </item>
-     <item row="1" column="0">
-      <widget class="QPushButton" name="pushButton_2">
+     <item>
+      <widget class="QPushButton" name="pushButton_load">
        <property name="text">
         <string>Загрузить</string>
        </property>
       </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_path"/>
      </item>
     </layout>
    </widget>
